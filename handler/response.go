@@ -3,6 +3,7 @@ package handler
 import (
 	"net/http"
 
+	"github.com/Marcos-Brhemem/OpportunitiesGO/schemas"
 	"github.com/gin-gonic/gin"
 )
 
@@ -20,4 +21,14 @@ func SendSucess(ctx *gin.Context, op string, data interface{}) {
 		"message": op,
 		"data":    data,
 	})
+}
+
+type ErrorResponse struct {
+	Message   string `json:"message"`
+	ErrorCode string `json:"errorCode"`
+}
+
+type CreateOpeningResponse struct {
+	Message string                  `json:"message"`
+	Data    schemas.OpeningResponse `json:"data"`
 }

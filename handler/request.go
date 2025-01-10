@@ -7,7 +7,7 @@ func errParamIsRequired(name, typ string) error {
 }
 
 // creating opening
-type CreatingOpeningRequest struct {
+type CreateOpeningRequest struct {
 	Role     string `json:"role"`
 	Company  string `json:"company"`
 	Location string `json:"location"`
@@ -16,7 +16,7 @@ type CreatingOpeningRequest struct {
 	Salary   int64  `json:"salary"`
 }
 
-func (r *CreatingOpeningRequest) Validate() error {
+func (r *CreateOpeningRequest) Validate() error {
 	if r.Role == "" && r.Company == "" && r.Location == "" && r.Link == "" && r.Remote == nil && r.Salary == 0 {
 		return fmt.Errorf("request body is empty or malformed")
 	}

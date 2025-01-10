@@ -1,7 +1,6 @@
 package handler
 
 import (
-	"fmt"
 	"net/http"
 
 	"github.com/Marcos-Brhemem/OpportunitiesGO/schemas"
@@ -17,7 +16,7 @@ func ShowOpeningHandler(ctx *gin.Context) {
 	opening := schemas.Opening{}
 
 	if err := db.First(&opening, id).Error; err != nil {
-		SendError(ctx, http.StatusNotFound, fmt.Sprintf("opening not found"))
+		SendError(ctx, http.StatusNotFound, "opening not found")
 		return
 	}
 
