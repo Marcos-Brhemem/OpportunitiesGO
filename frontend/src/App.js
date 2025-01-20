@@ -6,7 +6,7 @@ import { CssBaseline } from '@mui/material';
 import Navbar from './components/Navbar';
 import EditJob from './components/EditJob';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme'; // Import theme from theme.js
+import theme from './theme'; 
 import { Box } from '@mui/material';
 
 const App = () => {
