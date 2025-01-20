@@ -7,7 +7,6 @@ Opportunities é uma aplicação desenvolvida para facilitar o gerenciamento de 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
 </p>
 
 <p align="center">
@@ -83,8 +82,6 @@ Frontend:
 cd ../frontend
 npm install
 npm start
-
-## :memo: Licença
 
 Esse projeto está sob a licença MIT.
 
